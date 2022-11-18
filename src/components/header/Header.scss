@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+    .headerSlider{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+        .icons {
+            .leftIcon {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              .arrow {
+                &:hover {
+                  color: #d2ab67 !important;
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+          .information {
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           
+          
+            & > p {
+              font-family: "Oooh Baby", cursive;
+              font-size: 30px;
+              font-weight: 100;
+            }
+          }
+          .rightIcon {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .arrow {
+              &:hover {
+                color: #d2ab67 !important;
+                cursor: pointer;
+              }
+            }
+          }
+    }
+  
+}

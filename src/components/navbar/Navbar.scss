@@ -1,0 +1,256 @@
+.container{
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  height: 92px;
+  align-items: center;
+  position: fixed;
+  justify-content: space-evenly;
+  z-index: 99;
+  
+  .row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    nav {
+      .linksSide {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        .links {
+          display: flex;
+          flex-direction: row;
+          padding: 0;
+          gap: 10px;
+          & > li {
+            list-style-type: none;
+            padding: 30px 0;
+            & > a {
+              text-decoration: none;
+              color: #fff;
+              font-size: 14px;
+              font-weight: 500;
+              text-transform: uppercase;
+              &:hover {
+                color: #d2ab67;
+              }
+              
+            }
+          }
+          .accommadation {
+            position: relative;
+            .rooms{
+                display: none;
+            }
+            &:hover{
+                .rooms{
+                    display: block!important;
+                    position: absolute;
+                    top: 10;
+                    left: 0;
+                    border: 1px solid #fff;
+                    background-color: #fff;
+                    width: 200px;
+                    padding: 10px;
+                    &>ul{
+                        list-style-type: none;
+                        &>li{
+                            text-decoration: none;
+                            color: #373537;
+                            font-size: 16px;
+                            font-weight: 500;
+                            font-family: 'Baloo Bhaijaan 2', cursive;
+                            &:hover{
+                                list-style-type: disc;
+                                color: #d2ab67;  
+                            }
+                            
+                            &>a{
+                                text-decoration: none;
+                                color: #373537;
+                                font-size: 16px;
+                                font-weight: 500;
+                                font-family: 'Baloo Bhaijaan 2', cursive; 
+                                &:hover{
+                                    color: #d2ab67;
+                                    
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+           
+          }
+          .restaurants{
+            position: relative;
+            .foods{
+                display: none; 
+            }
+            &:hover{
+                .foods{
+                    display: block!important;
+                    position: absolute;
+                    top: 10;
+                    left: 0;
+                    border: 1px solid #fff;
+                    background-color: #fff;
+                    width: 200px;
+                    padding: 10px;  
+                     &>ul{
+                        list-style-type: none;
+                        &>li{
+                            text-decoration: none;
+                            color: #373537;
+                            font-size: 16px;
+                            font-weight: 500;
+                            font-family: 'Baloo Bhaijaan 2', cursive;
+                            &:hover{
+                                list-style-type: disc;
+                                color: #d2ab67;  
+                            }
+                            
+                            &>a{
+                                text-decoration: none;
+                                color: #373537;
+                                font-size: 16px;
+                                font-weight: 500;
+                                font-family: 'Baloo Bhaijaan 2', cursive; 
+                                &:hover{
+                                    color: #d2ab67;
+                                    
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+               }
+            }
+          
+        }
+      }
+      .activitiesSide{
+        position: relative;
+        .activities{
+            display: none;
+        }
+        &:hover{
+            .activities{
+                display: block!important;
+                position: absolute;
+                top: 10;
+                left: 0;
+                border: 1px solid #fff;
+                background-color: #fff;
+                width: 200px;
+                padding: 10px;  
+                 &>ul{
+                    list-style-type: none;
+                    &>li{
+                        text-decoration: none;
+                        color: #373537;
+                        font-size: 16px;
+                        font-weight: 500;
+                        font-family: 'Baloo Bhaijaan 2', cursive;
+                        &:hover{
+                            list-style-type: disc;
+                            color: #d2ab67;  
+                        }
+                        
+                        &>a{
+                            text-decoration: none;
+                            color: #373537;
+                            font-size: 16px;
+                            font-weight: 500;
+                            font-family: 'Baloo Bhaijaan 2', cursive; 
+                            &:hover{
+                                color: #d2ab67;
+                                
+                            }
+                        }
+                        
+                    }
+                }
+            }
+           }
+      }
+      .languagesSide{
+        position: relative;
+        .languages{
+          display: none;
+          
+        }
+        &:hover{
+          .languages{
+              display: block!important;
+              position: absolute;
+              top: 10;
+              left: 0;
+              border: 1px solid #fff;
+              background-color: #fff;
+              width: 130px;
+              padding: 10px;  
+               &>ul{
+                  list-style-type: none;
+                  &>li{
+                      text-decoration: none;
+                      color: #373537;
+                      font-size: 16px;
+                      font-weight: 500;
+                      font-family: 'Baloo Bhaijaan 2', cursive;
+                      &:hover{
+                          list-style-type: disc;
+                          color: #d2ab67;  
+                      }
+
+                      &>a{
+                          text-decoration: none;
+                          color: #373537;
+                          font-size: 16px;
+                          font-weight: 500;
+                          font-family: 'Baloo Bhaijaan 2', cursive; 
+                          &:hover{
+                              color: #d2ab67;
+                              
+                          }
+                      }
+                      
+                  }
+              }
+          }
+         }
+      }
+
+    }
+    .reservationSide {
+      font-family: "Baloo Bhaijaan 2", cursive;
+      font-style: normal;
+      .reservation {
+        padding: 6px 10px;
+
+        border: 1px solid #fff;
+        background-color: #d2ab67;
+        border-radius: 50px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 28px;
+        &:hover {
+          border: none;
+        }
+      }
+      
+    }
+    .toggle{
+     
+      
+    }
+  }
+  
+}

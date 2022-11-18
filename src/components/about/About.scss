@@ -1,0 +1,32 @@
+.aboutSide {
+  width: 100%;
+  .row {
+    padding: 120px 0;
+   
+    .intro{
+
+    }
+    .textSide {
+      
+      
+      .hText {
+        font-family: 'Hurricane', cursive;
+        font-size: 38px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        & > span {
+          color: #d2ab67;
+        }
+      }
+      .pText{
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        color: #151515;
+        line-height: 26px;
+      }
+
+    }
+  }
+}
