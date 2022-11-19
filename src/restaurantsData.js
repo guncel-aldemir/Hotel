@@ -1,28 +1,32 @@
+import Restaurant1 from "./assets/Images/restaurantImages/RESTAURANT-BÖLÜMÜ.jpg";
+import Restaurant2 from "./assets/Images/restaurantImages/RESTAURANT-BÜFE.jpg";
+import Restaurant3 from "./assets/Images/restaurantImages/RESTAURANT-INDOOR-RED.jpg";
+import Restaurant4 from "./assets/Images/restaurantImages/RESTAURANT-OUTDOOR.jpg";
+import Restaurant5 from "./assets/Images/restaurantImages/LOBBY-BAR-TERRACE.jpg";
+
+
 const RestaurantsImage = [
     {
         id:1,
-        image:"https://www.tacpremierhotel.com/assets/restImg/rest1.jpg"
+        image:Restaurant1,
     },
     {
         id:2,
-        image:"https://www.tacpremierhotel.com/assets/restImg/rest2.jpg"
+        image:Restaurant2,
     },
     {
         id:3,
-        image:"https://www.tacpremierhotel.com/assets/restImg/rest3.jpg"
+        image:Restaurant3,
     },
     {
         id:4,
-        image:"https://www.tacpremierhotel.com/assets/restImg/rest4.jpg"
+        image:Restaurant4,
     },
     {
         id:5,
-        image:"https://www.tacpremierhotel.com/assets/restImg/rest5.jpg"
+        image:Restaurant5,
     },
-    {
-        id:6,
-        image:"https://www.tacpremierhotel.com/assets/restImg/rest6.jpg"
-    }
+    
 
 ]
 export default RestaurantsImage;

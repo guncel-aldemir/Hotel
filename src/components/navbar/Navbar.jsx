@@ -45,19 +45,10 @@ const Navbar = () => {
               </li>
               <li className="restaurants">
                 <NavLink to="/restaurant">Restaurant & bar</NavLink>
-                {/* <div className="d-none foods">
-                  <ul>
-                    <li>
-                      <NavLink to="/">Restaurant</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/">Bar</NavLink>
-                    </li>
-                  </ul>
-                </div> */}
+                
               </li>
               <li>
-                <NavLink to="/">Spa</NavLink>
+                <NavLink to="/spa">Spa</NavLink>
               </li>
               <li className="activitiesSide">
                 <NavLink to="/">Aktİvİteler</NavLink>

@@ -15,6 +15,9 @@ const Opportunities = () => {
     height: "350px",
     width: "550px",
     opacity: ".8",
+    boxShadow: "10px 10px 5px #ccc",
+    border:"2px solid #fff"
+
   };
   const handleClick = (change) => {
     let changeVariable;

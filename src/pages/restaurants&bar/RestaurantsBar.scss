@@ -1,4 +1,5 @@
 .restaurants-bar {
+  background-color: #fbfbfb;
   .restaurants {
     display: flex;
     justify-content: center;
@@ -38,7 +39,10 @@
       color: #151515;
     }
   }
-  .row {
+  .first {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #fff;
+    margin-bottom: 50px;
     .images-foods {
       display: flex;
       flex-direction: row;
@@ -59,6 +63,99 @@
       }
 
      
+    }
+    .mainText{
+      padding-top: 8px;
+      font-family: 'Baloo Bhaijaan 2', cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 15px;
+        color: #151515;
+    }
+  }
+  .second{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #fff;
+    .restaurantSecondSide{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+     
+      &>h3{
+        
+        font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.07;
+    text-align: left;
+    color: #333333;
+      }
+      &>span{
+        margin: 20px 0;
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 15px;
+        color: #151515;
+      }
+      &>ul>li{
+        list-style-type: none;
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 15px;
+       
+        color: #151515;
+      }
+    }
+    .photoSideRestaurant{
+      &>img{
+        width: 100%;
+      }
+    }
+  }
+  .third{
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #fff;
+    .photoBarSide{
+    
+      &>img{
+        width: 100%;
+      }
+    }
+    .barThirdSide{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      &>h3{
+        
+        font-family: 'Baloo Bhaijaan 2', cursive;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.07;
+    text-align: left;
+    color: #333333;
+      }
+      &>span{
+        margin: 20px 0;
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 15px;
+        color: #151515;
+      }
+      &>ul>li{
+        list-style-type: none;
+        font-family: 'Baloo Bhaijaan 2', cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 15px;
+       
+        color: #151515;
+      }
     }
   }
 }

@@ -1,13 +1,18 @@
 import React from "react";
-import "./About.scss"
+import "./About.scss";
+import Photo from "../../assets/Images/COVER-PICTURE-HOTEL.jpg";
+import PhotoTwo from "../../assets/Images/RESEPSİYON1.jpg"
 const About = () => {
   return (
     <section className="px-4  aboutSide">
       <div className="row">
-        <div className="col-lg-7 col-sm-6 intro">
+        <div className="col-lg-6 col-sm-6 intro">
+        <img src={Photo} alt="hotel"  width={375} className="hotel"/>
+        <img src={PhotoTwo} alt="reception" width={375} className="reception" />
+        
         
         </div>
-        <div className="col-lg-5 col-sm-6 textSide">
+        <div className="col-lg-6 col-sm-6 textSide">
           <h4 className="hText">Welcome to <br></br> <span>Taç Premier Hotel & Spa
             </span></h4>
             <p className="pText">
