@@ -44,8 +44,8 @@ const Navbar = () => {
                 </div>
               </li>
               <li className="restaurants">
-                <NavLink to="/">Restaurant & bar</NavLink>
-                <div className="d-none foods">
+                <NavLink to="/restaurant">Restaurant & bar</NavLink>
+                {/* <div className="d-none foods">
                   <ul>
                     <li>
                       <NavLink to="/">Restaurant</NavLink>
@@ -54,7 +54,7 @@ const Navbar = () => {
                       <NavLink to="/">Bar</NavLink>
                     </li>
                   </ul>
-                </div>
+                </div> */}
               </li>
               <li>
                 <NavLink to="/">Spa</NavLink>

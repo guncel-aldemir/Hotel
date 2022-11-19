@@ -17,9 +17,9 @@ const Header = () => {
   const handleSwipe = (direction) => {
     let newSlideNumber;
     if (direction === "l") {
-      newSlideNumber = currentState === 0 ? 4 : currentState - 1;
+      newSlideNumber = currentState === 0 ? 3 : currentState - 1;
     } else {
-      newSlideNumber = currentState === 4 ? 0 : currentState + 1;
+      newSlideNumber = currentState === 3 ? 0 : currentState + 1;
     }
     setCurrentState(newSlideNumber);
   };

@@ -47,7 +47,7 @@
           }
         }
         .pool,
-        .organization {
+        .sea,.activities,.bath {
           @extend .food;
         }
         .active {
@@ -58,6 +58,10 @@
         }
       }
       .info{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
         .info-title{
           font-size: 20px;
           color: #d2ab67;

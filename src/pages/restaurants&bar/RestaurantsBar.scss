@@ -1,0 +1,64 @@
+.restaurants-bar {
+  .restaurants {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    & > h3 {
+      font-family: "Baloo Bhaijaan 2", cursive;
+      line-height: 27px;
+      text-transform: uppercase;
+      font-size: 35px;
+      color: #fff;
+      font-weight: 700;
+      margin-bottom: 30px;
+      z-index: 90;
+    }
+  }
+  .restaurants-main-titleSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0;
+    .restaurants-main-title {
+      font-family: "Oooh Baby", cursive;
+      font-size: 36px;
+      color: #898989;
+      text-transform: capitalize;
+      font-weight: 100;
+    }
+    .restaurants-main-subtitle {
+      font-size: 15px;
+      line-height: 26px;
+      max-width: 620px;
+      margin: auto;
+      font-family: "Baloo Bhaijaan 2", cursive;
+      font-weight: 400;
+      font-style: normal;
+      color: #151515;
+    }
+  }
+  .row {
+    .images-foods {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .arrow{
+        display: none;
+      }
+      &:hover{
+        .arrow{
+            display: block;
+        }
+        .arrow-left,.arrow-right{
+            border: 1px solid #000;
+            background-color: #000;
+            cursor: pointer;
+          }
+      }
+
+     
+    }
+  }
+}

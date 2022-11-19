@@ -19,13 +19,13 @@ const Footer = () => {
             </div>
             <div className="footer-icons">
                 <Link to="/sad" >
-                <FaFacebookF color="#fff"/>
+                <FaFacebookF color="#fff" className="icon"/>
                 </Link>
-                <Link to="/adsad"><FiInstagram color="#fff"/>
+                <Link to="/adsad"><FiInstagram color="#fff" className="icon"/>
                 </Link>
-                <Link to="/adsad"><FaLinkedinIn color="#fff"/>
+                <Link to="/adsad"><FaLinkedinIn color="#fff" className="icon"/>
                 </Link>
-                <Link to="/adsad"><FaYoutube color="#fff"/>
+                <Link to="/adsad"><FaYoutube color="#fff" className="icon"/>
                 </Link>
             </div>
         </div>

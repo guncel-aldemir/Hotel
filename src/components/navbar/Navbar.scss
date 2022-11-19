@@ -85,51 +85,51 @@
             }
            
           }
-          .restaurants{
-            position: relative;
-            .foods{
-                display: none; 
-            }
-            &:hover{
-                .foods{
-                    display: block!important;
-                    position: absolute;
-                    top: 10;
-                    left: 0;
-                    border: 1px solid #fff;
-                    background-color: #fff;
-                    width: 200px;
-                    padding: 10px;  
-                     &>ul{
-                        list-style-type: none;
-                        &>li{
-                            text-decoration: none;
-                            color: #373537;
-                            font-size: 16px;
-                            font-weight: 500;
-                            font-family: 'Baloo Bhaijaan 2', cursive;
-                            &:hover{
-                                list-style-type: disc;
-                                color: #d2ab67;  
-                            }
+          // .restaurants{
+          //   position: relative;
+          //   .foods{
+          //       display: none; 
+          //   }
+          //   &:hover{
+          //       .foods{
+          //           display: block!important;
+          //           position: absolute;
+          //           top: 10;
+          //           left: 0;
+          //           border: 1px solid #fff;
+          //           background-color: #fff;
+          //           width: 200px;
+          //           padding: 10px;  
+          //            &>ul{
+          //               list-style-type: none;
+          //               &>li{
+          //                   text-decoration: none;
+          //                   color: #373537;
+          //                   font-size: 16px;
+          //                   font-weight: 500;
+          //                   font-family: 'Baloo Bhaijaan 2', cursive;
+          //                   &:hover{
+          //                       list-style-type: disc;
+          //                       color: #d2ab67;  
+          //                   }
                             
-                            &>a{
-                                text-decoration: none;
-                                color: #373537;
-                                font-size: 16px;
-                                font-weight: 500;
-                                font-family: 'Baloo Bhaijaan 2', cursive; 
-                                &:hover{
-                                    color: #d2ab67;
+          //                   &>a{
+          //                       text-decoration: none;
+          //                       color: #373537;
+          //                       font-size: 16px;
+          //                       font-weight: 500;
+          //                       font-family: 'Baloo Bhaijaan 2', cursive; 
+          //                       &:hover{
+          //                           color: #d2ab67;
                                     
-                                }
-                            }
+          //                       }
+          //                   }
                             
-                        }
-                    }
-                }
-               }
-            }
+          //               }
+          //           }
+          //       }
+          //      }
+          //   }
           
         }
       }
@@ -186,6 +186,7 @@
         }
         &:hover{
           .languages{
+          
               display: block!important;
               position: absolute;
               top: 10;

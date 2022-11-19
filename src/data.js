@@ -1,17 +1,22 @@
+import Beach from "./assets/Images/headerImages/BEACH.jpg";
+import TAC1 from "./assets/Images/headerImages/TAÇ1 .jpg";
+import TAC2 from "./assets/Images/headerImages/TAÇ2.jpg";
+import TAC3 from "./assets/Images/headerImages/TAÇ3.jpg";
+
 const Images =[
   {
-    url: "https://www.tacpremierhotel.com/assets/slider-images/slider1.jpg",
+  url: Beach,
   },
   {
-    url: "https://www.tacpremierhotel.com/assets/slider-images/slider2.jpg",
+    url: TAC1,
   },
   {
-    url: "https://www.tacpremierhotel.com/assets/slider-images/slider3.jpg",
+    url:  TAC2,
   },
 
-  { url: "https://www.tacpremierhotel.com/assets/slider-images/slider4.jpg" },
-  {
-    url: "https://www.tacpremierhotel.com/assets/slider-images/slider5.jpg",
+  { 
+    url:  TAC3 
   },
+ 
 ];
 export default Images;
