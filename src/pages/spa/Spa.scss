@@ -49,16 +49,100 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 90%;
+        flex-wrap: wrap;
+        gap:60px;
+        width:100%;
+        
         .spaCard{
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            background-color: #fff;
+            position: relative;
             .spaPhoto>img{
                 width: 100%;
             }
+            .spaText{
+                width: 100%;
+                
+                position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.6);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.25s;
+        &>h5{
+            font-size: 25px;
+            border-bottom: 2px solid #d2ab67;
+            display: inline-block;
+            line-height: 26px;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
         }
+        &>span{
+            font-size: 16px;
+            line-height: 28px;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+    font-weight: 400;
+    font-style: normal;
+        }
+        &> *{
+            transform:  translateY(20px);
+            transition:  transform 0.25s;
+        }
+        &:hover{
+            opacity: 1;
+            color: #fff;
+            &>*{
+                transform:  translateY(0);   
+            }
+        }
+            }
+        }
+        .poolCard{
+            @extend .spaCard;
+   
+            .poolPhoto>img{
+                width: 100%;
+            }
+            .poolText{
+               @extend .spaText;
+            }
+        }
+        }
+        .spaCardTwo{
+            @extend .spaCardOne;
+            margin-top: 100px;
+            .bathCard{
+                @extend .spaCard;
+                position: relative;
+                .bathPhoto>img{
+                    width: 100%;
+                }
+                .bathText{
+                    @extend .spaText;
+                }
+            }
+            .fitnessCard{
+                position: relative;
+                @extend .spaCard;
+                
+                .fitnessPhoto>img{
+                    width: 100%;
+                }
+                .fitnessText{
+                    width: 100%;
+                  @extend .spaText;
+                }
+            }
         }
     }
 }

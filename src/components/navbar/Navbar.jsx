@@ -31,14 +31,14 @@ const Navbar = () => {
                 <NavLink to="/">Otelİmİz</NavLink>
               </li>
               <li className="accommadation">
-                <NavLink to="/">Konaklama</NavLink>
+                <NavLink to="/odalarimiz">Konaklama</NavLink>
                 <div className="d-none  rooms">
                   <ul>
                     <li>
-                      <NavLink to="/">Aile Odası</NavLink>
+                      <NavLink to="/odalarimiz/aile">Aile Odası</NavLink>
                     </li>
                     <li>
-                      <NavLink to="/">Standart Oda</NavLink>
+                      <NavLink to="/odalarimiz/standart">Standart Oda</NavLink>
                     </li>
                   </ul>
                 </div>
@@ -51,8 +51,8 @@ const Navbar = () => {
                 <NavLink to="/spa">Spa</NavLink>
               </li>
               <li className="activitiesSide">
-                <NavLink to="/">Aktİvİteler</NavLink>
-                <div className="d-none activities">
+                <NavLink to="/aktiviteler">Aktİvİteler</NavLink>
+                {/* <div className="d-none activities">
                   <ul>
                     <li>
                       <NavLink to="/">havuz-sahil</NavLink>
@@ -67,7 +67,7 @@ const Navbar = () => {
                       <NavLink to="/">Alışveriş</NavLink>
                     </li>
                   </ul>
-                </div>
+                </div> */}
               </li>
               <li>
                 <NavLink to="/">Galerİ</NavLink>

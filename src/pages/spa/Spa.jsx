@@ -4,7 +4,8 @@ import TopPhoto from "../../assets/Images/headerImages/TAÇ2.jpg";
 import Sauna from "../../assets/Images/spaSaunaImages/SAUNA.JPG";
 import Bath from "../../assets/Images/spaSaunaImages/TURKISH BATH.jpg";
 import Pool from "../../assets/Images/poolsImages/INDOOR-POOL.jpg"
-import Fitness from "../../assets/Images/spaSaunaImages/FITNESS.JPG"
+import Fitness from "../../assets/Images/spaSaunaImages/FITNESS.JPG";
+import Footer from "../../components/footer/Footer";
 const Spa = () => {
     const bgImageSpa = {
         backgroundImage: `url(${TopPhoto})`,
@@ -29,46 +30,47 @@ const Spa = () => {
     </div>
     <div className="row spaCards">
         <div className="col-lg-6 col-sm-6 spaCardOne">
-            <div className="spaCard">
+            <div className="col-lg-3 spaCard">
                 <div className="spaPhoto">
-                <img src={Sauna} alt="" width={300} height={400}/>
+                <img loading="lazy" src={Sauna} alt="" width={500} height={400}/>
                 </div>
                 <div className="spaText">
-                <h3>Sauna</h3>
-                    <span>Farklı hava koşullarında da tatil keyfinize ara vermeden tadını çıkarabileceğiniz kapalı havuzumuz 4 mevsim boyunca hizmet vermektedir.</span>
+                <h5>Sauna</h5>
+                    <span>Özel SPA alanında farklı masaj, terapi ve uygulamaları bulabileceksiniz.</span>
                 </div>
             </div>
-        <div className="poolCard">
+        <div className="col-lg-3 poolCard">
             <div className="poolPhoto">
-            <img src={Pool} alt="" width={300} height={400}/>
+            <img loading="lazy" src={Pool} alt="" width={500} height={400}/>
             </div>
             <div className="poolText">
-                <h3>Kapalı Havuz</h3>
+                <h5>Kapalı Havuz</h5>
                 <span>Farklı hava koşullarında da tatil keyfinize ara vermeden tadını çıkarabileceğiniz kapalı havuzumuz 4 mevsim boyunca hizmet vermektedir.</span>
             </div>
         </div>
         </div>
         <div className="col-lg-6 col-sm-6 spaCardTwo">
-        <div className="bathCard">
+        <div className="col-lg-3 bathCard">
             <div className="bathPhoto">
             <img src={Bath} alt="" width={300} height={400}/>
             </div>
             <div className="bathText">
-                <h3>Hamam</h3>
+                <h5>Hamam</h5>
                 <span>Özel tasarlanmış Türk hamamı hem vücudunuzu hem ruhunuzu tazeleyin</span>
             </div>
         </div>
-        <div className="fitnessCard">
+        <div className="col-lg-3 fitnessCard">
             <div className="fitnessPhoto">
             <img src={Fitness} alt="" width={300} height={400}/>
             </div>
             <div className="fitnessText">
-                <h3>Fitness</h3>
-                <span>Özel tasarlanmış Türk hamamı hem vücudunuzu hem ruhunuzu tazeleyin</span>
+                <h5>Fitness</h5>
+                <span>Özel tasarlanmış Fitness salonumuz ile hem vücudunuzu  tazeleyin</span>
             </div>
         </div>
         </div>
     </div>
+    <Footer/>
   </section>;
 };
 
