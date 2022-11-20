@@ -8,6 +8,7 @@ import Accommodation from './pages/accommodation/Accommodation';
 import StandartRoom from './pages/rooms/standartRoom/StandartRoom';
 import FamilyRoom from './pages/rooms/familyRoom/FamilyRoom';
 import Activities from './pages/activities/Activities';
+import Contact from './pages/contact/Contact';
 function App() {
   return (
     <div className="App">
@@ -20,6 +21,7 @@ function App() {
         <Route path='/odalarimiz/standart' element={<StandartRoom/>}/>
         <Route path='/odalarimiz/aile' element={<FamilyRoom/>}/>
         <Route path='/aktiviteler' element={<Activities/>}/>
+        <Route path='/iletişim' element={<Contact/>}/>
       </Routes>
       </BrowserRouter>
     </div>

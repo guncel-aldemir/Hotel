@@ -73,7 +73,7 @@ const Navbar = () => {
                 <NavLink to="/">Galerİ</NavLink>
               </li>
               <li>
-                <NavLink to="/">İletİşİm</NavLink>
+                <NavLink to="/iletişim">İletİşİm</NavLink>
               </li>
               <li className="languagesSide">
               <img

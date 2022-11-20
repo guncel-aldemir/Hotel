@@ -4,7 +4,7 @@ import "./Activities.scss";
 import activitiesData from "../../activities";
 import Footer from "../../components/footer/Footer";
 const Activities = () => {
-    const bgFamily = {
+    const bgActivity = {
         backgroundImage: `url(${TopPhoto})`,
         backgroundPosition: "bottom",
         backgroundSize: "cover",
@@ -14,7 +14,7 @@ const Activities = () => {
         opacity: ".8",
       };
   return <section className="activities"> 
-  <div className="activities-header" style={bgFamily}>
+  <div className="activities-header" style={bgActivity}>
   <h3>Aktİvİteler</h3>
 </div>
 <div className="activitiesInfo">

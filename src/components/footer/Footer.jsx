@@ -4,7 +4,7 @@ import {FaFacebookF,FaLinkedinIn,FaYoutube} from "react-icons/fa";
 import {FiInstagram} from "react-icons/fi"
 import{AiOutlineRight,AiFillHome} from "react-icons/ai";
 import {BsFillTelephoneFill} from "react-icons/bs";
-import {GrMail} from "react-icons/gr"
+import {GrMail} from "react-icons/gr";
 
 import "./Footer.scss"
 const Footer = () => {
