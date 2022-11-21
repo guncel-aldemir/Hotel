@@ -11,6 +11,7 @@ import RoomData from "../../../room";
 import Footer from "../../../components/footer/Footer";
 import {FaBed,FaBinoculars,FaWifi,FaCoffee} from "react-icons/fa";
 import {MdPeople} from "react-icons/md";
+import Navbar from "../../../components/navbar/Navbar";
 const StandartRoom = () => {
   const [roomImage,setRoomImage]=useState(0);
   const bgStandart = {
@@ -46,6 +47,7 @@ const StandartRoom = () => {
   }
   return (
     <section className="standart-room">
+      <Navbar/>
       <div className="standart-room-header" style={bgStandart}>
         <h3>Standart Oda</h3>
       </div>

@@ -1,0 +1,17 @@
+.navbarToggleSide{
+    .toggleLinksSide{
+        .toggleLinks{
+            list-style-type: none;
+            padding: 0 0;
+            &>li>a{
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #fff;
+                &:hover{
+                    color:#d2ab67;
+                }
+            }
+        }
+    }
+    
+}

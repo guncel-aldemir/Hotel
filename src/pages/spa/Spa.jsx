@@ -6,6 +6,7 @@ import Bath from "../../assets/Images/spaSaunaImages/TURKISH-BATH.jpg";
 import Pool from "../../assets/Images/poolsImages/INDOOR-POOL.jpg"
 import Fitness from "../../assets/Images/spaSaunaImages/FITNESS.JPG";
 import Footer from "../../components/footer/Footer";
+import Navbar from "../../components/navbar/Navbar";
 const Spa = () => {
     const bgImageSpa = {
         backgroundImage: `url(${TopPhoto})`,
@@ -17,6 +18,7 @@ const Spa = () => {
         opacity: ".8",
       };
   return <section className="spaSide">
+    <Navbar/>
     <div className="spaHeader" style={bgImageSpa}>
     <h3>Spa</h3>
     </div>

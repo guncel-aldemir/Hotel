@@ -3,13 +3,16 @@ import "./Galleries.scss";
 import TopPhoto from "../../assets/Images/headerImages/TAÇ2.jpg";
 import Datas from "../../gallery";
 import Footer from "../../components/footer/Footer";
+import Modal from "../../components/modal/Modal";
+import Navbar from "../../components/navbar/Navbar";
 
 const Galleries = () => {
 
   const [photos,setPhotos] = useState([]);
   const [category,setCategory]= useState();
-  
-  
+
+  const [clickedImg, setClickedImg] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(null);
   const bgGalery = {
     backgroundImage: `url(${TopPhoto})`,
     backgroundPosition: "bottom",
@@ -40,12 +43,16 @@ let filteredList = useMemo(getFilteredList,[category,photos])
 const handleCategory = (filtered)=>{
  
   setCategory(filtered)
- 
+
+}
+const handleImage=(item,index)=>{
+setCurrentIndex(index)
+setClickedImg(item.image)
 }
 
 
-
   return <section className="galerySection">
+    <Navbar/>
      <div className="galery-header" style={bgGalery}>
         <h3>Galerİ</h3>
       </div>
@@ -64,13 +71,14 @@ const handleCategory = (filtered)=>{
        
           <div className="col-lg-6 col-sm-6 photoItems px-4">
             {filteredList.map((item,index)=>(
-              <div className="photoItem" key={index}>
-                <img loading="lazy" src={item.image} width={300} height={300} alt="" />
+              <div className="photoItem" key={index} >
+                <img loading="lazy" src={item.image} width={300} height={300} alt="" onClick={()=>handleImage(item,index)} />
               </div>
+             
             ))}
-           
-            </div> 
             
+            </div> 
+            {clickedImg && <Modal clickedImg={clickedImg}  setClickedImg={setClickedImg}/>} 
           </div>
       </div>
       <Footer/>

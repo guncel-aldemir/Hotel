@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import Footer from "../../components/footer/Footer";
+import Navbar from "../../components/navbar/Navbar";
 const Contact = () => {
   const bgContact = {
     backgroundImage: `url(${TopPhoto})`,
@@ -17,6 +18,7 @@ const Contact = () => {
   };
   return (
     <section className="contactSection">
+      <Navbar/>
       <div className="contact-header" style={bgContact}>
         <h3>İletİşİm</h3>
       </div>

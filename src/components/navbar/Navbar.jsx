@@ -5,7 +5,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import NavbarToggle from "./navbarToggle"
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
-
+  const [toggle,setToggle]= useState(false);
   const changeBackground = () => {
     if (window.scrollY >= 92) {
       setNavbar(true);
@@ -15,16 +15,22 @@ const Navbar = () => {
   };
 
   window.addEventListener("scroll", changeBackground);
+  const handleToggle = ()=>{
+    setToggle(!toggle)
+  }
   return (
     
-    <div className={navbar ? "activetedSide" : "container"}>
+    <div className={navbar ? "activetedSide" : "container-fluid"}>
       <nav>
       <div className="row">
-        <div className="col-lg-2 col-md-3 logo">
+        <div className="col-lg-2 col-sm-2 logo">
+          <NavLink to="/">
           <img
             src="https://www.tacpremierhotel.com/assets/images/tacLogo.png"
             alt="logo"
           />
+          </NavLink>
+          
         </div>
         <div className="col-lg-8  d-none d-lg-block nav">
           <div className="linksSide">
@@ -104,9 +110,9 @@ const Navbar = () => {
             Rezervasyon
           </NavLink>
         </div>
-        <div className="col-md-3  d-lg-none d-md-block toggle">
-          <AiOutlineMenu />
-          <NavbarToggle/>
+        <div className="col-sm-2  d-lg-none d-sm-inline-block toggle" onClick={handleToggle}>
+          <AiOutlineMenu color="#fff" />
+          {toggle && <NavbarToggle toggle={toggle} setToggle={setToggle}/>}
         </div>
       </div>
       </nav>

@@ -6,6 +6,7 @@ import Family from "../../assets/Images/roomsImages/STD-SEAVİEW-ROOM.jpg";
 import { NavLink } from "react-router-dom";
 import {AiFillCaretRight} from "react-icons/ai";
 import Footer from "../../components/footer/Footer";
+import Navbar from "../../components/navbar/Navbar";
 const Accommodation = () => {
   const bgAccommodation = {
     backgroundImage: `url(${TopPhoto})`,
@@ -18,6 +19,7 @@ const Accommodation = () => {
   };
   return (
     <section className="accommodationSide">
+      <Navbar/>
       <div className="accommodation-header" style={bgAccommodation}>
         <h3>Accommodation</h3>
       </div>

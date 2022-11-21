@@ -6,6 +6,7 @@ import Photo1 from "../../assets/Images/restaurantImages/RESTAURANT-INDOOR-BLUE.
 import TopPhoto from "../../assets/Images/headerImages/TAÇ2.jpg";
 import Bar from "../../assets/Images/restaurantImages/LOBBY-BAR-TERRACE.jpg";
 import Footer from "../../components/footer/Footer"
+import Navbar from "../../components/navbar/Navbar";
 const RestaurantsBar = () => {
   const [food, setFood] = useState(0);
   const bgImageRestaurant = {
@@ -35,6 +36,7 @@ const RestaurantsBar = () => {
 
   return (
     <section className="restaurants-bar">
+      <Navbar/>
       <div className="restaurants" style={bgImageRestaurant}>
         <h3>Restaurant & Bar</h3>
       </div>

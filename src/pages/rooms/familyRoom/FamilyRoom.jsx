@@ -9,6 +9,7 @@ import Room2 from "../../../assets/Images/roomsImages/STD-SEAVİEW-ROOM.jpg";
 import Room3 from "../../../assets/Images/roomsImages/STD-ODA-3.jpg";
 import Room4 from "../../../assets/Images/roomsImages/STD-ODA.jpg";
 import "./FamilyRoom.scss"
+import Navbar from "../../../components/navbar/Navbar";
 const FamilyRoom = () => {
   const [roomImage,setRoomImage]=useState(0);
   const bgFamily = {
@@ -43,6 +44,7 @@ const FamilyRoom = () => {
     setRoomImage(newRoomPicture)
   }
   return  (<section className="family-room">
+    <Navbar/>
   <div className="family-room-header" style={bgFamily}>
     <h3>Standart Oda</h3>
   </div>

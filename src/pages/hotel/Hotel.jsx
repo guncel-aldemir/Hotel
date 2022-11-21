@@ -3,6 +3,7 @@ import TopPhoto from "../../assets/Images/headerImages/TAÇ2.jpg";
 import "./Hotel.scss";
 import Cover from "../../assets/Images/headerImages/TAÇ1 .jpg";
 import Footer from "../../components/footer/Footer";
+import Navbar from "../../components/navbar/Navbar";
 const Hotel = () => {
   const bgHotel = {
     backgroundImage: `url(${TopPhoto})`,
@@ -15,6 +16,7 @@ const Hotel = () => {
   };
   return (
     <section className="hotelSide">
+      <Navbar/>
       <div className="hotel-header" style={bgHotel}>
       <h3>Hakkımızda</h3>
       </div>
