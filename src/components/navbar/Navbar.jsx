@@ -70,7 +70,7 @@ const Navbar = () => {
                 </div> */}
               </li>
               <li>
-                <NavLink to="/">Galerİ</NavLink>
+                <NavLink to="/galeri">Galerİ</NavLink>
               </li>
               <li>
                 <NavLink to="/iletişim">İletİşİm</NavLink>

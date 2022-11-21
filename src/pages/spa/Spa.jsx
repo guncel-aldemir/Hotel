@@ -2,7 +2,7 @@ import React from "react";
 import "./Spa.scss"
 import TopPhoto from "../../assets/Images/headerImages/TAÇ2.jpg";
 import Sauna from "../../assets/Images/spaSaunaImages/SAUNA.JPG";
-import Bath from "../../assets/Images/spaSaunaImages/TURKISH BATH.jpg";
+import Bath from "../../assets/Images/spaSaunaImages/TURKISH-BATH.jpg";
 import Pool from "../../assets/Images/poolsImages/INDOOR-POOL.jpg"
 import Fitness from "../../assets/Images/spaSaunaImages/FITNESS.JPG";
 import Footer from "../../components/footer/Footer";

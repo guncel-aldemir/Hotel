@@ -9,6 +9,7 @@ import StandartRoom from './pages/rooms/standartRoom/StandartRoom';
 import FamilyRoom from './pages/rooms/familyRoom/FamilyRoom';
 import Activities from './pages/activities/Activities';
 import Contact from './pages/contact/Contact';
+import Galleries from './pages/galleries/Galleries';
 function App() {
   return (
     <div className="App">
@@ -22,6 +23,7 @@ function App() {
         <Route path='/odalarimiz/aile' element={<FamilyRoom/>}/>
         <Route path='/aktiviteler' element={<Activities/>}/>
         <Route path='/iletişim' element={<Contact/>}/>
+        <Route path='/galeri' element={<Galleries/>}/>
       </Routes>
       </BrowserRouter>
     </div>
