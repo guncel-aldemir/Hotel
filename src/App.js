@@ -10,6 +10,8 @@ import FamilyRoom from './pages/rooms/familyRoom/FamilyRoom';
 import Activities from './pages/activities/Activities';
 import Contact from './pages/contact/Contact';
 import Galleries from './pages/galleries/Galleries';
+import Hotel from './pages/hotel/Hotel';
+
 function App() {
   return (
     <div className="App">
@@ -24,6 +26,8 @@ function App() {
         <Route path='/aktiviteler' element={<Activities/>}/>
         <Route path='/iletişim' element={<Contact/>}/>
         <Route path='/galeri' element={<Galleries/>}/>
+        <Route path='/otelimiz' element={<Hotel/>}/>
+        
       </Routes>
       </BrowserRouter>
     </div>

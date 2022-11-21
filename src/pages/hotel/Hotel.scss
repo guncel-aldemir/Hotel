@@ -1,0 +1,72 @@
+.hotelSide {
+  background-color: #fbfbfb;
+  .hotel-header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    & > h3 {
+      font-family: "Baloo Bhaijaan 2", cursive;
+      line-height: 27px;
+      text-transform: uppercase;
+      font-size: 35px;
+      color: #fff;
+      font-weight: 700;
+      margin-bottom: 30px;
+      z-index: 90;
+    }
+  }
+  .information-hotel {
+    padding: 120px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    .imageHotel > img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .textHotel {
+      & > h3 {
+        font-family: "Hurricane", cursive;
+        font-size: 38px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        color: #d2ab67;
+        margin-bottom: 70px;
+      }
+      & > p {
+        font-size: 16px;
+        color: #151515;
+        line-height: 26px;
+        margin-bottom: 25px;
+        font-family: "Baloo Bhaijaan 2", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+    }
+  }
+  .tableSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 80px 0;
+    &>h3{
+        font-family: "Hurricane", cursive;
+        font-size: 28px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        color: #d2ab67;
+        margin-bottom: 70px;
+    }
+    &>table>thead>tr>th{
+        color: #d2ab67;
+        
+
+    }
+    
+  }
+}

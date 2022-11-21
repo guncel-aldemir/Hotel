@@ -26,9 +26,9 @@ const Header = () => {
 
   return (
     <>
-    <Navbar/>
+     <Navbar/>
     <div className="header" style={bgImageStyle}>
-    
+   
         <div className="headerSlider">
         <div className="icons">
         <div className="leftIcon">

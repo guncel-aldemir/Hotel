@@ -16,7 +16,9 @@ const Navbar = () => {
 
   window.addEventListener("scroll", changeBackground);
   return (
-    <div className="container">
+    
+    <div className={navbar ? "activetedSide" : "container"}>
+      <nav>
       <div className="row">
         <div className="col-lg-2 col-md-3 logo">
           <img
@@ -24,11 +26,11 @@ const Navbar = () => {
             alt="logo"
           />
         </div>
-        <nav className="col-lg-8  d-none d-lg-block">
+        <div className="col-lg-8  d-none d-lg-block nav">
           <div className="linksSide">
             <ul className="links">
               <li>
-                <NavLink to="/">Otelİmİz</NavLink>
+                <NavLink to="/otelimiz">Otelİmİz</NavLink>
               </li>
               <li className="accommadation">
                 <NavLink to="/odalarimiz">Konaklama</NavLink>
@@ -52,22 +54,7 @@ const Navbar = () => {
               </li>
               <li className="activitiesSide">
                 <NavLink to="/aktiviteler">Aktİvİteler</NavLink>
-                {/* <div className="d-none activities">
-                  <ul>
-                    <li>
-                      <NavLink to="/">havuz-sahil</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/">Eğlence-Spor</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/">Toplantı Organizasyon</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="/">Alışveriş</NavLink>
-                    </li>
-                  </ul>
-                </div> */}
+                
               </li>
               <li>
                 <NavLink to="/galeri">Galerİ</NavLink>
@@ -111,7 +98,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-        </nav>
+        </div>
         <div className="col-lg-2  d-lg-block d-none reservationSide ">
           <NavLink to="/" className="reservation">
             Rezervasyon
@@ -122,6 +109,8 @@ const Navbar = () => {
           <NavbarToggle/>
         </div>
       </div>
+      </nav>
+      
     </div>
   );
 };
