@@ -8,6 +8,7 @@ import {GrMail} from "react-icons/gr";
 
 import "./Footer.scss"
 const Footer = () => {
+    
   return <footer className="footer">
     <div className="row ">
         <div className="col-lg-3 col-sm-4 hotelMedia">
@@ -19,15 +20,15 @@ const Footer = () => {
                 <h3>Sosyal Medya</h3>
             </div>
             <div className="footer-icons">
-                <Link to="/sad" >
+                <a  href="https://tr-tr.facebook.com/Tacpremierhotel/" target={"_blank"} rel="noreferrer" >
                 <FaFacebookF color="#fff" className="icon"/>
+                </a>
+                <a href="https://www.instagram.com/tacpremier/?hl=tr" target={"_blank"} rel="noreferrer"><FiInstagram color="#fff" className="icon"/>
+                </a>
+                <Link to="/"><FaLinkedinIn color="#fff" className="icon"/>
                 </Link>
-                <Link to="/adsad"><FiInstagram color="#fff" className="icon"/>
-                </Link>
-                <Link to="/adsad"><FaLinkedinIn color="#fff" className="icon"/>
-                </Link>
-                <Link to="/adsad"><FaYoutube color="#fff" className="icon"/>
-                </Link>
+                <a href="https://www.youtube.com/watch?v=EuVP2tE1seY" target={"_blank"} rel="noreferrer"><FaYoutube color="#fff" className="icon"/>
+                </a>
             </div>
         </div>
         <div className="col-lg-2 col-sm-6 footer-main">
@@ -37,7 +38,7 @@ const Footer = () => {
                     <AiOutlineRight/>
                     Otelimiz
                 </NavLink>
-                <NavLink to="odalarimiz">
+                <NavLink to="/odalarimiz">
                 <AiOutlineRight/>
                     Konaklama
                 </NavLink>
