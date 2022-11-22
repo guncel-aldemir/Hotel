@@ -1,12 +1,16 @@
 .navbarToggleSide{
+    z-index: 99;
     .toggleLinksSide{
+        z-index: 99;
         .toggleLinks{
             list-style-type: none;
+            z-index: 99;
             padding: 0 0;
             &>li>a{
                 text-decoration: none;
                 text-transform: uppercase;
                 color: #fff;
+                z-index: 99;
                 &:hover{
                     color:#d2ab67;
                 }

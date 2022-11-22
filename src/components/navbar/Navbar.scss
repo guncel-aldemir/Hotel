@@ -5,14 +5,16 @@
   height: 92px;
   align-items: center;
   position: fixed;
+  
   justify-content: space-evenly;
   z-index: 99;
   width: 100%;
-  padding: 0 0;
+  padding: 0;
   opacity: 1;
+width:-webkit-fill-available;
   nav{
     width: 100%;
-    padding: 0 20px;
+    padding: 0 0;
     .row {
       width: 100%;
       display: flex;
@@ -191,7 +193,7 @@
   z-index: 99;
   width: 100%;
   padding: 0 0;
-  
+  width:-webkit-fill-available;
   background:#4d4a4c;
  
   
@@ -200,7 +202,7 @@
     transition: background-color 1500ms linear;
   nav{
     width: 100%;
-    padding: 0 20px;
+    padding: 20px 0;
     .row {
       width: 100%;
       display: flex;
@@ -365,8 +367,10 @@
 }
 @media (min-width:768px) and (max-width:1023.9px){
   .container-fluid{
-    
+    background:#4d4a4c;
+    width:-webkit-fill-available;
     height: max-content;
+    
     nav{
       display: flex;
      .row{
@@ -385,6 +389,8 @@
   .activetedSide{
     background:#4d4a4c;
     height: max-content;
+    width:-webkit-fill-available;
+    right: 0;
     nav{
       display: flex;
      .row{
@@ -404,7 +410,8 @@
 }
 @media (min-width:576px) and (max-width:767.9px){
   .container-fluid{
-   
+    background:#4d4a4c;
+    width:-webkit-fill-available;
     height: max-content;
     nav{
       display: flex;
@@ -424,6 +431,7 @@
   .activetedSide{
     background:#4d4a4c;
     height: max-content;
+    width:-webkit-fill-available;
     nav{
       display: flex;
      .row{
@@ -443,8 +451,9 @@
 }
 @media (min-width:270px) and (max-width:575.9px){
   .container-fluid{
-    
+    background:#4d4a4c;
     height: max-content;
+    width:-webkit-fill-available;
     nav{
       display: flex;
      .row{

@@ -67,6 +67,7 @@ const Photos = () => {
                 alt="sea"
                 
                 width={300}
+                height={200}
               />
               <div className="Phototext"> <Link to="/">
                   Fitness

@@ -4,7 +4,7 @@ import Photo from "../../assets/Images/COVER-PICTURE-HOTEL.jpg";
 import PhotoTwo from "../../assets/Images/RESEPSİYON1.jpg"
 const About = () => {
   return (
-    <section className="px-4  aboutSide">
+    <section className="aboutSide">
       <div className="row">
         <div className="col-lg-6 col-sm-6 intro">
         <img src={Photo} alt="hotel"  width={375} className="hotel"/>
