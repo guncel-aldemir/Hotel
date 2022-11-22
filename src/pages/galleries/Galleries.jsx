@@ -56,7 +56,7 @@ setClickedImg(item.image)
      <div className="galery-header" style={bgGalery}>
         <h3>Galerİ</h3>
       </div>
-      <div className="photosSide px-4">
+      <div className="photosSide">
         <div className="filterSide">
           <span onClick={()=>handleCategory("")}  >Tümü</span>
           <span onClick={()=>handleCategory("genel")} >Genel</span>

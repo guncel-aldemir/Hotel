@@ -11,7 +11,7 @@ const Header = () => {
     backgroundSize: "cover",
     height: "500px",
     width: "100%",
-    opacity:".8"
+    opacity:".7"
   };
 
   const handleSwipe = (direction) => {

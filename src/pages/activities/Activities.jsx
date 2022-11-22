@@ -23,7 +23,7 @@ const Activities = () => {
     <h3>Animasyon & Aktiviteler</h3>
     <p>Taç Premium Hotel&Spa her yaşa hitap eden eğlence ve spor alanlarının yanı sıra özel şovlar, sürpriz gösteriler, sezona ve özel günlere özel gösterilerle aktivite ve eğlenceyi misafirlerine bir arada sunar.</p>
 </div>
-<div className="row activitiesSide px-4">
+<div className="row activitiesSide">
       <div className="col-lg-12 activitiesCards">
         {activitiesData.map((data)=>(
             <div className="activitieCard" key={data.id}>

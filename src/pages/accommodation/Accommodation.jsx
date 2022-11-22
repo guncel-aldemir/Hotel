@@ -29,7 +29,7 @@ const Accommodation = () => {
           misafirlerimize eşsiz bir tatil imkanı sunmaktayız.
         </p>
       </div>
-      <div className="row firstRoom  px-4">
+      <div className="row firstRoom">
       <div className="col-lg-6 col-sm-6 images-accommodation">
             <img loading="lazy" src={Std}  height={310}alt="room-standart" />
             </div>
@@ -48,7 +48,7 @@ const Accommodation = () => {
         </div>
         
       </div>
-      <div className="row secondRoom  px-4">
+      <div className="row secondRoom">
       <div className="col-lg-6 col-sm-6 images-accommodation">
             <img loading="lazy" src={Family}  height={310}alt="room-family" />
             </div>

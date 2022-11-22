@@ -43,7 +43,7 @@ const Opportunities = () => {
   };
 
   return (
-    <section className="opportunities px-4">
+    <section className="opportunities">
       <div className="row">
         <h3 className="main-title">Hİzmetlerİmİz</h3>
         <span className="main-subtitle">Profesyonel Hizmetlerimiz</span>

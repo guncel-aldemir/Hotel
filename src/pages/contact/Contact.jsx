@@ -22,7 +22,7 @@ const Contact = () => {
       <div className="contact-header" style={bgContact}>
         <h3>İletİşİm</h3>
       </div>
-      <div className="row contactSide px-4 ">
+      <div className="row contactSide ">
         <div className="col-md-5 contactInfo">
           <div className="contact-texts">
             <ul>

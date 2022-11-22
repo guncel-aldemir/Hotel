@@ -1,142 +1,172 @@
-.photosPart{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   padding: 120px 0;
-   .title{
-    font-size: 14px;
-    color: #222;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 300;
-    font-family: 'Oswald', sans-serif;
-   }
-   .subtitle{
-    font-family: 'Oooh Baby', cursive;
-    font-size: 36px;
-    color: #898989;
-    text-transform: capitalize;
-    font-weight: 100;
-    margin-bottom: 40px;
-   }
-   .photosFirstPart{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    .part{
-        position: relative;
-        .Phototext{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,.6);
-            
+.general-photos{
+    width: 100%;
+    .photosPart{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 70px 0;
+        .title{
+         font-size: 14px;
+         color: #222;
+         margin-bottom: 15px;
+         text-transform: uppercase;
+         letter-spacing: 2px;
+         font-weight: 300;
+         font-family: 'Oswald', sans-serif;
+        }
+        .subtitle{
+         font-family: 'Oooh Baby', cursive;
+         font-size: 36px;
+         color: #898989;
+         text-transform: capitalize;
+         font-weight: 100;
+         margin-bottom: 40px;
+        }
+        .photosFirstPart{
+         display: grid;
+         grid-template-columns: repeat(4,1fr);
+         .part{
+             position: relative;
+             .Phototext{
+                 position: absolute;
+                 top: 0;
+                 left: 0;
+                 width: 100%;
+                 height: 100%;
+                 background: rgba(0,0,0,.6);
+                 
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                 opacity: 0;
+                 transition: opacity 0.25s;
+                 &>a{
+                     text-decoration: none;
+                     color: #d2ab67;
+                     font-size: 24px;
+                      font-weight: 400;
+                      font-family: 'Baloo Bhaijaan 2', cursive;
+                 }
+                 &> *{
+                     transform:  translateY(20px);
+                     transition:  transform 0.25s;
+                 }
+                 &:hover{
+                     opacity: 1;
+                     &>*{
+                         transform:  translateY(0);   
+                     }
+                 }
+             }
+         }
+         
+        }
+        .photosSecondPart{
+         display: grid;
+         grid-template-columns: repeat(2,1fr);
+         .part{
+            position: relative;
+            .Phototext{
+             position: absolute;
+             top: 0;
+             left: 0;
+             width: 100%;
+             height: 100%;
+             background: rgba(0,0,0,.6);
+             -webkit-transition: background-color 2000ms linear;
+             -ms-transition: background-color 2000ms linear;
+             transition: background-color 2000ms linear;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             opacity: 0;
+             transition: opacity 0.25s;
+             &>a{
+                 text-decoration: none;
+                 color: #d2ab67;
+                 font-size: 24px;
+                  font-weight: 400;
+                  font-family: 'Baloo Bhaijaan 2', cursive;
+             }
+             &> *{
+                 transform:  translateY(20px);
+                 transition:  transform 0.25s;
+             }
+             &:hover{
+                 opacity: 1;
+                 &>*{
+                     transform:  translateY(0);   
+                 }
+             }
+         }
+         }
+        }
+     }
+}
+
+// @media (min-width:768.1px) and (max-width:1200px){
+//     .general-photos{
+//         .photosPart{
+//             display: flex;
+//             .photosFirstPart{
+//                 display: grid;
+//                 grid-template-columns: repeat(4,1fr);
+//             }
+//             .photosSecondPart{
+//                 display: grid;
+//                 grid-template-columns: repeat(2,1fr);
+//             }
+//         }
+//     }
+    
+    
+// }
+@media (min-width:576px) and (max-width:768px){
+    .general-photos{
+        .photosPart{
             display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            transition: opacity 0.25s;
-            &>a{
-                text-decoration: none;
-                color: #d2ab67;
-                font-size: 24px;
-                 font-weight: 400;
-                 font-family: 'Baloo Bhaijaan 2', cursive;
+            .photosFirstPart{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
             }
-            &> *{
-                transform:  translateY(20px);
-                transition:  transform 0.25s;
-            }
-            &:hover{
-                opacity: 1;
-                &>*{
-                    transform:  translateY(0);   
-                }
+            .photosSecondPart{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
             }
         }
     }
     
-   }
-   .photosSecondPart{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    .part{
-       position: relative;
-       .Phototext{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0,0,0,.6);
-        
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 0;
-        transition: opacity 0.25s;
-        &>a{
-            text-decoration: none;
-            color: #d2ab67;
-            font-size: 24px;
-             font-weight: 400;
-             font-family: 'Baloo Bhaijaan 2', cursive;
-        }
-        &> *{
-            transform:  translateY(20px);
-            transition:  transform 0.25s;
-        }
-        &:hover{
-            opacity: 1;
-            &>*{
-                transform:  translateY(0);   
-            }
-        }
-    }
-    }
-   }
-}
-@media (min-width:576px) and (max-width:768px){
-    .photosPart{
-        display: flex;
-        .photosFirstPart{
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
-        }
-        .photosSecondPart{
-            display: grid;
-            grid-template-columns: repeat(1,1fr);
-        }
-    }
     
 }
 @media (min-width:270px) and (max-width:575.9px){
-    .photosPart{
-        display: flex;
-        &>.subtitle{
-            font-size: 20px;
-        }
-        .photosFirstPart{
-            display: grid;
-            grid-template-columns: repeat(1,1fr);
-            .part{
-                .photo>img{
-                    width: 350px;
+    .general-photos{
+
+        .photosPart{
+            display: flex;
+            &>.subtitle{
+                font-size: 20px;
+            }
+            .photosFirstPart{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                .part{
+                    .photo>img{
+                       
+                    }
                 }
             }
-        }
-        .photosSecondPart{
-            display: grid;
-            grid-template-columns: repeat(1,1fr);
-            .part{
-                .photo>img{
-                    width: 350px;
+            .photosSecondPart{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                .part{
+                    .photo>img{
+                        width: 300px;
+                    }
                 }
             }
         }
     }
+    
     
 }

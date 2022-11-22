@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.scss";
 import { AiOutlineMenu } from "react-icons/ai";
-import NavbarToggle from "./navbarToggle"
+import NavbarToggle from "./navbarToggle";
+import Tac from "../../assets/Images/generalImages/TAC-LOGO.png"
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const [toggle,setToggle]= useState(false);
@@ -26,7 +27,7 @@ const Navbar = () => {
         <div className="col-lg-2 col-sm-2 logo">
           <NavLink to="/">
           <img
-            src="https://www.tacpremierhotel.com/assets/images/tacLogo.png"
+            src={Tac}
             alt="logo"
           />
           </NavLink>

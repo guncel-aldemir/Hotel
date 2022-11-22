@@ -9,7 +9,7 @@
       font-family: "Baloo Bhaijaan 2", cursive;
       line-height: 27px;
       text-transform: uppercase;
-      font-size: 35px;
+      font-size: 32px;
       color: #fff;
       font-weight: 700;
       margin-bottom: 30px;
@@ -21,7 +21,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 120px 0;
+    padding:50px 0;
     & > h3 {
       font-family: "Oooh Baby", cursive;
       font-size: 36px;
@@ -89,4 +89,20 @@
     
     }
   }
+}
+@media (min-width:260px) and (max-width:374.9px){
+  .activities{
+    &>.activities-header>h3{
+      font-size: 28px;
+    }
+    .activitiesSide{
+      display: flex;
+      padding: 0;
+      .activitieCard>.activitiePhoto>img{
+        width: 100%;
+       
+      }
+    }
+  }
+  
 }

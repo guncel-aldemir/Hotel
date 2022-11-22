@@ -20,7 +20,7 @@ const Hotel = () => {
       <div className="hotel-header" style={bgHotel}>
       <h3>Hakkımızda</h3>
       </div>
-      <div className=" row information-hotel px-4">
+      <div className=" row information-hotel">
         <div className="col-lg-7 col-sm-6 imageHotel">
           <img  src={Cover} alt=""  />
         </div>
@@ -32,15 +32,16 @@ const Hotel = () => {
       </div>
       <div className="tableSide">
         <h3>Genel Bilgiler</h3>
+        <p> Taç Premier&Spa'da engelli odalarımız dahil olmak üzere 293 adet odamız olup  mevcut yatak kapasitemiz 700'dür .Tüm odalarımız sigara içilmez olup nargile getirilmesi yasaktır.Tüm hijyen kurallarına dikkat edip sizin rahatınız için haftada 3 kez çarşaf değişimi, 2 güne bir ise havlu değişimi yapılmaktadır.</p>
       <table>
         <thead>
           <tr>
             <th className="text-center">Hizmetler</th>
             <th className="text-center">Ücretsiz</th>
             <th className="text-center">Ücretli</th>
-            <th>Hizmetler</th>
-            <th className="text-center">Ücretsiz</th>
-            <th className="text-center">Ücretli</th>
+            <th className="second">Hizmetler</th>
+            <th className="text-center second">Ücretsiz</th>
+            <th className="text-center second">Ücretli</th>
           </tr>
         </thead>
         <tbody>

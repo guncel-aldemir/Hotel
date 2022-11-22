@@ -1,15 +1,15 @@
 import React from "react";
-import Pool from "../../assets/Images/generalImages/HAVUZ6.jpg";
-import Hotel from "../../assets/Images/generalImages/DIŞ-CEPHE2.jpg";
-import Sea from "../../assets/Images/generalImages/SAHİL-18.jpg";
+import Pool from "../../assets/Images/poolsImages/HAVUZ2.jpg";
+import Hotel from "../../assets/Images/ourHotelsImages/COVER-PICTURE-HOTEL.jpg";
+import Sea from "../../assets/Images/spaSaunaImages/FITNESS.JPG";
 import Terrace from "../../assets/Images/generalImages/TERRACE.jpg";
-import Terrace2 from "../../assets/Images/generalImages/TERAS-KAMELYA.jpg";
+import Terrace2 from "../../assets/Images/ourHotelsImages/TERRACE-CASTLE-VIEW.jpg";
 import Restaurant from "../../assets/Images/generalImages/HAVUZ-KENARI-RESTAURANT.jpg";
 import "./Photos.scss";
 import { Link } from "react-router-dom";
 const Photos = () => {
   return (
-    <section className="general-photos px-4">
+    <section className="general-photos">
         
       <div className="photosPart">
       <h3 className="title">Taç Premier Hotel&Spa</h3>
@@ -22,7 +22,7 @@ const Photos = () => {
                 src={Hotel}
                 alt="hotel"
                 width={300}
-                height={300}
+                
               />
             </div>
             <div className="Phototext">
@@ -35,23 +35,9 @@ const Photos = () => {
             <div className="photo">
               <img
                 loading="lazy"
-                src={Sea}
-                alt="sea"
-                height={300}
-                width={300}
-              />
-              <div className="Phototext"> <Link to="/">
-                   Plaj
-                </Link></div>
-            </div>
-          </div>
-          <div className="part">
-            <div className="photo">
-              <img
-                loading="lazy"
                 src={Pool}
                 alt="pool"
-                height={300}
+                
                 width={300}
               />
             </div>
@@ -66,15 +52,32 @@ const Photos = () => {
                 src={Terrace2}
                 alt="terrace2"
                 width={300}
-                height={300}
+              
               />
             </div>
             <div className="Phototext"><Link to="/">
                     Teras Kamelya
                 </Link></div>
           </div>
+          <div className="part">
+            <div className="photo">
+              <img
+                loading="lazy"
+                src={Sea}
+                alt="sea"
+                
+                width={300}
+              />
+              <div className="Phototext"> <Link to="/">
+                  Fitness
+                </Link></div>
+            </div>
+          </div>
+          
+         
         </div>
         <div className="photosSecondPart">
+        
           <div className="part">
             <div className="photo">
               <img

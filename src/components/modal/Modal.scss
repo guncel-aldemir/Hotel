@@ -10,13 +10,14 @@
     align-items: center;
     &>img{
         display: block;
-        max-width: 60%;
-        max-height: 80%;
+        max-width: 100%;
+        max-height: 85%;
         margin: 60px auto;
         box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
     }
     &>span{
         position: absolute;
+        padding: 90px 0;
         top: 20px;
         right: 20px;
         font-size: 30px;

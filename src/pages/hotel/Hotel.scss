@@ -17,7 +17,7 @@
     }
   }
   .information-hotel {
-    padding: 120px 0;
+    padding: 60px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,9 +51,20 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 80px 0;
+    width:100%;
+    &>p{
+      font-size: 16px;
+        color: #151515;
+        line-height: 26px;
+        margin-bottom: 25px;
+        font-family: "Baloo Bhaijaan 2", cursive;
+        font-weight: 400;
+        font-style: normal;
+        padding-bottom: 30px;
+    }
     &>h3{
         font-family: "Hurricane", cursive;
         font-size: 28px;
@@ -68,5 +79,29 @@
 
     }
     
+  }
+}
+
+
+@media (min-width:270px) and (max-width:375px){
+  .hotelSide{
+    .tableSide{
+      &>table{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        &>thead{
+          display: flex;
+          tr>.text-center{
+           
+          }
+        }
+        &>thead>tr>.second{
+          display: none;
+        }
+        
+      }
+    
+    }
   }
 }

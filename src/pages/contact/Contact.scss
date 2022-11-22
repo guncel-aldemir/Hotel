@@ -19,7 +19,7 @@
   .contactSide {
     display: flex;
     flex-direction: row;
-    padding: 120px 0;
+    padding: 60px 0;
     .contactInfo {
       padding-right: 50px;
       .contact-texts {
@@ -146,4 +146,22 @@
     }
   }
   
+}
+@media (min-width: 270px) and (max-width: 767.9px) {
+  .contactSection {
+    background-color: #fbfbfb;
+    &>.contact-header>h3{
+      font-size: 28px;
+    }
+    & > .photosSide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .photos > .photoItems {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
 }
