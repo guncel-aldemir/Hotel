@@ -33,7 +33,7 @@ const Hotel = () => {
       <div className="tableSide">
         <h3>Genel Bilgiler</h3>
         <p> Taç Premier&Spa'da engelli odalarımız dahil olmak üzere 293 adet odamız olup  mevcut yatak kapasitemiz 700'dür .Tüm odalarımız sigara içilmez olup nargile getirilmesi yasaktır.Tüm hijyen kurallarına dikkat edip sizin rahatınız için haftada 3 kez çarşaf değişimi, 2 güne bir ise havlu değişimi yapılmaktadır.</p>
-      <table>
+      {/* <table>
         <thead>
           <tr>
             <th className="text-center">Hizmetler</th>
@@ -214,7 +214,21 @@ const Hotel = () => {
             </td>
           </tr>
         </tbody>
-      </table>
+      </table> */}
+      
+      <ul>
+        <li>Wifi: Ücretli</li>
+        <li>Spor Merkezi: Ücretsiz</li>
+        <li>Hamam: Ücretsiz</li>
+        <li>Sauna: Ücretsiz</li>
+        <li>Çamaşırhane& Terzi: Ücretli</li>
+        <li>Doktor&Hemşire Hizmeti(7/24): Ücretli</li>
+        <li>Oda Servisi: Ücretli</li>
+        <li>Masaj: Ücretli</li>
+        <li>Kuaför: Ücretli</li>
+        <li>Sahil Voleybolu: Ücretsiz (Nr.12 Büfe)</li>
+        <li>Havuz etrafı şemsiye-şezlong: Ücretsiz</li>
+      </ul>
     </div>
     <Footer/>
     </section>

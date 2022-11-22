@@ -2,7 +2,7 @@
   width: 100%;
   .row {
     padding: 70px 0;
-
+width: 100%;
     .intro {
       display: flex;
       flex-direction: column;
@@ -39,7 +39,7 @@
     
     }
     .textSide {
-     padding-left: 15px;
+     
    
       .hText {
         font-family: "Hurricane", cursive;
@@ -62,12 +62,13 @@
   }
 }
 
-@media (min-width:320px) and (max-width:325px){
+@media (min-width:320px) and (max-width:415px){
   .row{
     display: flex;
     .intro>img{
       width: 300px;
     }
+  
   }
 }
 @media (min-width:280px) and (max-width:319.9px){

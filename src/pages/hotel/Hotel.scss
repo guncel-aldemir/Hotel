@@ -73,33 +73,40 @@
         color: #d2ab67;
         margin-bottom: 70px;
     }
-    &>table>thead>tr>th{
-        color: #d2ab67;
+    &>ul{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 25px;
+      &>li{
+        list-style-type:disc;
+        &::marker{
+          color: #d2ab67;
+        }
+        font-size: 16px;
+        color: #151515;
+        line-height: 26px;
         
+        font-family: "Baloo Bhaijaan 2", cursive;
+        font-weight: 400;
+        font-style: normal;
+        padding-bottom: 30px;
+      }
+    }
 
     }
     
   }
-}
+
 
 
 @media (min-width:270px) and (max-width:375px){
   .hotelSide{
     .tableSide{
-      &>table{
+      &>ul{
         display: flex;
         flex-direction: column;
-        width: 100%;
-        &>thead{
-          display: flex;
-          tr>.text-center{
-           
-          }
-        }
-        &>thead>tr>.second{
-          display: none;
-        }
-        
+        gap: 5px;
       }
     
     }
