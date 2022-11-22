@@ -5,7 +5,7 @@ import {FiInstagram} from "react-icons/fi"
 import{AiOutlineRight,AiFillHome} from "react-icons/ai";
 import {BsFillTelephoneFill} from "react-icons/bs";
 import {GrMail} from "react-icons/gr";
-
+import Tac from "../../assets/Images/generalImages/TAC-LOGO.png";
 import "./Footer.scss"
 const Footer = () => {
     
@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="col-lg-3 col-sm-4 hotelMedia">
             <div className="footer-logo"> 
             
-                <img src="https://www.tacpremierhotel.com/assets/images/tacLogo.png" alt="footer logo" />
+                <img src={Tac} alt="footer logo" />
             </div>
             <div className="social-media-title">
                 <h3>Sosyal Medya</h3>

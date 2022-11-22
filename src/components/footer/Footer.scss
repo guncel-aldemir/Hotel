@@ -8,12 +8,18 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
+   
     .hotelMedia {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
       gap: 10px;
+      .footer-logo>img{
+        height: 92px;
+        z-index: 99;
+        opacity: 1!important;
+      }
       .footer-icons {
         display: flex;
         flex-direction: row;
