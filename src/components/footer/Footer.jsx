@@ -12,6 +12,7 @@ const Footer = () => {
     <div className="row ">
         <div className="col-lg-3 col-sm-4 hotelMedia">
             <div className="footer-logo"> 
+            
                 <img src="https://www.tacpremierhotel.com/assets/images/tacLogo.png" alt="footer logo" />
             </div>
             <div className="social-media-title">
@@ -32,27 +33,27 @@ const Footer = () => {
         <div className="col-lg-2 col-sm-6 footer-main">
             <div className="footer-menu">
                 <h3>Menu</h3>
-                <NavLink>
+                <NavLink to="/otelimiz">
                     <AiOutlineRight/>
                     Otelimiz
                 </NavLink>
-                <NavLink>
+                <NavLink to="odalarimiz">
                 <AiOutlineRight/>
                     Konaklama
                 </NavLink>
-                <NavLink>
+                <NavLink to="/restaurant">
                 <AiOutlineRight/>
                     Restaurant&Bar
                 </NavLink>
-                <NavLink>
+                <NavLink to="/spa">
                 <AiOutlineRight/>
                    Spa
                 </NavLink>
-                <NavLink>
+                <NavLink to="/aktiviteler">
                 <AiOutlineRight/>
                    Aktivite
                 </NavLink>
-                <NavLink>
+                <NavLink to="/iletişim">
                 <AiOutlineRight/>
                     İletişim
                 </NavLink>
