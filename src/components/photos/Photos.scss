@@ -1,5 +1,15 @@
 .general-photos{
     width: 100%;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(0,0,0,0.25);
+    }
     .photosPart{
         display: flex;
         flex-direction: column;
@@ -7,9 +17,11 @@
         align-items: center;
         padding-top: 50px;
         padding-bottom: 30px;
+        position: relative;
+        
         .title{
          font-size: 14px;
-         color: #222;
+         color: #fff;
         
          text-transform: uppercase;
          letter-spacing: 2px;
@@ -19,7 +31,7 @@
         .subtitle{
          font-family: 'Oooh Baby', cursive;
          font-size: 36px;
-         color: #898989;
+         color: #fff;
          text-transform: capitalize;
          font-weight: 100;
          margin-bottom: 40px;

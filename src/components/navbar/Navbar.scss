@@ -454,13 +454,17 @@ width:-webkit-fill-available;
     background:#4d4a4c;
     height: max-content;
     width:-webkit-fill-available;
+
     nav{
       display: flex;
      .row{
       display: flex;
       flex-direction: column;
+      height: max-content;
       .logo{
         width: max-content;
+        height: 70px;
+       
       }
      }
     }
@@ -479,6 +483,7 @@ width:-webkit-fill-available;
       flex-direction: column;
       .logo{
         width: max-content;
+        height: 70px;
       }
      }
     }

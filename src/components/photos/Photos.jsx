@@ -7,9 +7,20 @@ import Terrace2 from "../../assets/Images/ourHotelsImages/TERRACE-CASTLE-VIEW.jp
 import Restaurant from "../../assets/Images/generalImages/HAVUZ-KENARI-RESTAURANT.jpg";
 import "./Photos.scss";
 import { Link } from "react-router-dom";
+import Bg from "../../assets/Images/seaImages/beach-g8ea94a6d0_1920.jpg"
 const Photos = () => {
+  const bgHotel = {
+    backgroundImage: `url(${Bg})`,
+    backgroundPosition: "bottom",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
+    
+
+    width: "100%",
+    opacity: "1",
+  };
   return (
-    <section className="general-photos">
+    <section className="general-photos" style={bgHotel}>
         
       <div className="photosPart">
       <h3 className="title">Taç Premier Hotel&Spa</h3>
